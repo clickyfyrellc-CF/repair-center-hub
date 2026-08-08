@@ -12,7 +12,7 @@ const Hero = () => {
             Appliance repair network - UAE
           </span>
           <h1 className='text-3xl md:text-5xl font-bold mt-3'>
-            Every one of our service centers, in one place
+            Professional Home Appliance Repair Services Across the UAE
           </h1>
           <p className='mt-4 text-muted-foreground text-sm md:text-base'>
             We run a dedicated service center for each brand we repair. Pick the

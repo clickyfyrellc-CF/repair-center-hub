@@ -12,7 +12,7 @@ const About = () => {
               About us
             </span>
             <h2 className='text-3xl font-semibold mb-4 leading-snug'>
-              One team behind every service center
+              Trusted Appliance Repair Experts Serving the UAE
             </h2>
             <p className='text-muted text-sm leading-relaxed mb-3'>
               We repair home appliances across the UAE. Instead of one crowded
