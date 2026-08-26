@@ -261,7 +261,7 @@ export default function SiemensPage() {
           <div className='grid gap-6 md:grid-cols-2 xl:grid-cols-4'>
             {stats.map((item) => (
               <div key={item.label} className='text-center'>
-                <div className='text-4xl font-bold text-[#C2761A] md:text-[38px]'>{item.value}</div>
+                <div className='text-4xl font-bold text-[#C2761A] md:text-[34px]'>{item.value}</div>
                 <div className='mt-2 text-base font-medium text-[#40536b]'>{item.label}</div>
               </div>
             ))}
