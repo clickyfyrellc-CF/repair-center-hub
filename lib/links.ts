@@ -4,3 +4,9 @@ export const links = [
   { href: '#about', label: 'About' },
   { href: '#why-us', label: 'Why Us' },
 ];
+
+export const servicesMenu = [
+  { href: '/bosch', label: 'Bosch Appliance Repair' },
+  { href: '/siemon', label: 'Siemens Services' },
+  { href: '/LG', label: 'LG Services' },
+];
