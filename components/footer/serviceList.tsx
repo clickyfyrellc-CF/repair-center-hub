@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const brandServices = [
   { title: 'Bosch Appliance Service', href: '/bosch' },
-  { title: 'Siemens Appliance Service', href: '/siemon' },
+  { title: 'Siemens Appliance Service', href: '/siemens' },
   { title: 'LG Appliance Service', href: '/LG' },
 ];
 

@@ -193,44 +193,44 @@ export default function BoschPage() {
         <div className='absolute inset-0 bg-[rgba(245,166,35,0.25)]' />
 
         <div className='relative mx-auto max-w-[1400px] px-6 md:px-8 lg:px-10'>
-          <div className='flex h-[560px] min-h-[560px] items-center justify-center py-0'>
+          <div className='flex h-auto min-h-0 items-center justify-center py-4 md:h-[580px] md:min-h-[580px] md:py-0'>
             <div className='w-full max-w-[1200px] text-center'>
-              <div className='mb-8 flex justify-center'>
-                <span className='inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/15 px-6 py-3 text-base font-semibold text-white backdrop-blur-sm'>
-                  <span className='inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/15'>
+              <div className='mb-3 flex justify-center md:mb-8'>
+                <span className='inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/15 px-4 py-2 text-sm font-semibold text-white backdrop-blur-sm md:px-6 md:py-3 md:text-base'>
+                  <span className='inline-flex h-6 w-6 items-center justify-center rounded-full bg-white/15 md:h-7 md:w-7'>
                     <Wrench className='h-4 w-4 text-white' />
                   </span>
                   Professional Bosch Service
                 </span>
               </div>
 
-              <h1 className='mx-auto max-w-[1100px] text-4xl font-bold leading-[1.08] text-white md:text-5xl lg:text-[64px]'>
+              <h1 className='mx-auto max-w-[1100px] text-3xl font-bold leading-[1.08] text-white md:text-5xl lg:text-[64px]'>
                 Professional Bosch Appliance Repair in UAE
               </h1>
 
-              <p className='mx-auto mt-6 max-w-[950px] text-base text-white/90 md:text-[22px] md:leading-8'>
+              <p className='mx-auto mt-3 max-w-[950px] text-sm leading-5 text-white/90 md:mt-6 md:text-[22px] md:leading-8'>
                 Expert repair solutions for all Bosch appliances with quality
                 parts and trained technicians
               </p>
 
-              <div className='mt-8 flex flex-col items-center justify-center gap-5 md:flex-row'>
+              <div className='mt-4 flex flex-col items-center justify-center gap-3 md:mt-8 md:flex-row md:gap-5'>
                 <Link
                   href={whatsappLink}
-                  className='inline-flex items-center gap-3 rounded-full bg-[#C2761A] px-8 py-5 text-lg font-semibold text-white shadow-lg shadow-orange-900/25 transition hover:bg-[#b66f16]'
+                  className='inline-flex items-center gap-3 rounded-full bg-[#C2761A] px-6 py-3 text-base font-semibold text-white shadow-lg shadow-orange-900/25 transition hover:bg-[#b66f16] md:px-8 md:py-5 md:text-lg'
                 >
                   <CalendarDays className='h-5 w-5' />
                   Book Repair Now
                 </Link>
                 <a
                   href={whatsappLink}
-                  className='inline-flex items-center gap-3 rounded-full bg-white px-8 py-5 text-lg font-semibold text-[#101a2b] shadow-lg shadow-black/10 transition hover:bg-slate-100'
+                  className='inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 text-base font-semibold text-[#101a2b] shadow-lg shadow-black/10 transition hover:bg-slate-100 md:px-8 md:py-5 md:text-lg'
                 >
                   <Phone className='h-5 w-5 text-[#C2761A]' />
                   Call +971 52 731 5207
                 </a>
               </div>
 
-              <div className='mt-12 flex flex-col items-center justify-center gap-6 md:flex-row md:gap-12'>
+              <div className='mt-5 flex flex-col items-center justify-center gap-3 md:mt-12 md:flex-row md:gap-12'>
                 {[
                   ['clock', 'Same Day Service'],
                   ['settings', 'Quality Parts'],
@@ -240,12 +240,12 @@ export default function BoschPage() {
                     key={label}
                     className='flex flex-col items-center gap-3 text-white'
                   >
-                    <div className='flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-sm'>
+                    <div className='flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-sm md:h-14 md:w-14'>
                       {icon === 'clock' && <Clock3 className='h-6 w-6' />}
                       {icon === 'settings' && <Wrench className='h-6 w-6' />}
                       {icon === 'expert' && <Sparkles className='h-6 w-6' />}
                     </div>
-                    <span className='text-base font-medium md:text-lg'>
+                    <span className='text-sm font-medium md:text-lg'>
                       {label}
                     </span>
                   </div>

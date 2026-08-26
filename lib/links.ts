@@ -7,6 +7,6 @@ export const links = [
 
 export const servicesMenu = [
   { href: '/bosch', label: 'Bosch Appliance Repair' },
-  { href: '/siemon', label: 'Siemens Services' },
+  { href: '/siemens', label: 'Siemens Services' },
   { href: '/LG', label: 'LG Services' },
 ];
