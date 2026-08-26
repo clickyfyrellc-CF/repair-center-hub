@@ -190,7 +190,7 @@ export default function SiemensPage() {
             sizes='100vw'
           />
         </div>
-        <div className='absolute inset-0 bg-[rgba(241, 160, 29, 0.25)]' />
+        <div className='absolute inset-0 bg-[rgba(245,166,35,0.25)]' />
 
         <div className='relative mx-auto max-w-[1400px] px-6 md:px-8 lg:px-10'>
           <div className='flex h-[560px] min-h-[560px] items-center justify-center py-0'>
