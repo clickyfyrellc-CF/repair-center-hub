@@ -9,7 +9,6 @@ import {
   Gauge,
   Info,
   Phone,
-  ShieldCheck,
   Sparkles,
   Wrench,
 } from 'lucide-react';
@@ -191,10 +190,10 @@ export default function BoschPage() {
             sizes='100vw'
           />
         </div>
-        <div className='absolute inset-0 bg-[rgba(120,20,20,0.55)]' />
+        <div className='absolute inset-0 bg-[rgba(245,166,35,0.25)]' />
 
         <div className='relative mx-auto max-w-[1400px] px-6 md:px-8 lg:px-10'>
-          <div className='flex min-h-[820px] items-center justify-center py-20 md:py-24'>
+          <div className='flex h-[560px] min-h-[560px] items-center justify-center py-0'>
             <div className='w-full max-w-[1200px] text-center'>
               <div className='mb-8 flex justify-center'>
                 <span className='inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/15 px-6 py-3 text-base font-semibold text-white backdrop-blur-sm'>
@@ -257,13 +256,13 @@ export default function BoschPage() {
         </div>
       </section>
 
-      <section className='bg-white'>
+      <section className='bg-[#F5F6F7]'>
         <div className='mx-auto max-w-[1400px] px-6 py-[55px] md:px-8 lg:px-10'>
           <div className='grid gap-6 md:grid-cols-2 xl:grid-cols-4'>
             {stats.map((item) => (
               <div key={item.label} className='text-center'>
-                <div className='text-4xl font-bold text-[#C2761A] md:text-[48px]'>{item.value}</div>
-                <div className='mt-2 text-base font-medium text-[#40536b] md:text-[18px]'>{item.label}</div>
+                <div className='text-4xl font-bold text-[#C2761A] md:text-[38px]'>{item.value}</div>
+                <div className='mt-2 text-base font-medium text-[#40536b]'>{item.label}</div>
               </div>
             ))}
           </div>
@@ -273,11 +272,11 @@ export default function BoschPage() {
       <section className='bg-white py-16 md:py-20'>
         <div className='mx-auto max-w-[1400px] px-6 md:px-8 lg:px-10'>
           <div className='max-w-[1200px]'>
-            <h2 className='text-3xl font-bold text-[#111827] md:text-[46px]'>
+            <h2 className='text-3xl font-bold leading-[1.2] text-[#111827] md:text-[34px]'>
               Our Bosch Repair Services
             </h2>
             <div className='mt-4 h-[5px] w-[105px] bg-[#C2761A]' />
-            <p className='mt-7 max-w-[920px] text-lg leading-8 text-[#40536b] md:text-[24px]'>
+            <p className='mt-5 max-w-[920px] text-base leading-7 text-[#40536b] md:text-lg md:leading-7'>
               Comprehensive repair and maintenance services for all Bosch
               appliances with quality parts and expert care
             </p>
@@ -310,20 +309,20 @@ export default function BoschPage() {
                     <div className='flex h-12 w-12 items-center justify-center rounded-xl bg-[#fbeee3] text-[#C2761A]'>
                       <ServiceIcon type={card.icon} />
                     </div>
-                    <h3 className='text-2xl font-bold text-[#111827]'>{card.title}</h3>
+                    <h3 className='text-xl font-bold text-[#111827]'>{card.title}</h3>
                   </div>
 
-                  <p className='text-base leading-7 text-[#40536b]'>{card.description}</p>
+                  <p className='text-sm leading-6 text-[#40536b]'>{card.description}</p>
 
                   <div className='mt-6'>
-                    <p className='mb-3 text-base font-semibold text-[#111827]'>Common Issues:</p>
+                    <p className='mb-3 text-sm font-semibold text-[#111827]'>Common Issues:</p>
                     <ul className='space-y-2 text-[#40536b]'>
                       {card.issues.map((issue) => (
                         <li key={issue} className='flex items-center gap-2'>
                           <span className='text-[#C2761A]'>
                             <span className='inline-block h-2.5 w-2.5 rounded-full border border-[#C2761A]' />
                           </span>
-                          <span className='text-base'>{issue}</span>
+                          <span className='text-sm'>{issue}</span>
                         </li>
                       ))}
                     </ul>
@@ -331,7 +330,7 @@ export default function BoschPage() {
                 </div>
 
                 <div className='border-t border-slate-200 px-6 py-4'>
-                  <div className='flex cursor-pointer items-center justify-between text-lg font-semibold text-[#111827]'>
+                  <div className='flex cursor-pointer items-center justify-between text-base font-semibold text-[#111827]'>
                     <span>Maintenance Tips</span>
                     <ChevronDown className='h-5 w-5 text-[#C2761A]' />
                   </div>
@@ -394,18 +393,18 @@ export default function BoschPage() {
         </div>
       </section>
 
-      <section className='bg-[#f7f8fa] pb-12 pt-6 md:pb-16'>
+      <section className='bg-[#f7f8fa] pb-8 pt-2 md:pb-10'>
         <div className='mx-auto max-w-[1400px] px-6 md:px-8 lg:px-10'>
-          <div className='rounded-[28px] bg-white p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] md:p-10'>
+          <div className='rounded-[28px] bg-[#F5F6F7] p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] md:p-10'>
             <div className='flex items-start gap-3'>
               <div className='mt-1 flex h-9 w-9 items-center justify-center rounded-full bg-[#fbeee3] text-[#C2761A]'>
                 <Info className='h-5 w-5' />
               </div>
               <div>
-                <h2 className='text-2xl font-bold text-[#142033] md:text-[28px]'>
+                <h2 className='text-2xl font-bold text-[#142033] md:text-[26px]'>
                   Independent Service Provider
                 </h2>
-                <p className='mt-4 text-base leading-8 text-[#40536b] md:text-[18px]'>
+                <p className='mt-3 text-sm leading-6 text-[#40536b] md:text-base md:leading-7'>
                   We are an independent appliance repair service provider in
                   UAE. All brand names and trademarks mentioned on this
                   website (including <strong>Bosch</strong>,{' '}
@@ -426,26 +425,6 @@ export default function BoschPage() {
         </div>
       </section>
 
-      <section className='bg-[#f7f8fa] pb-20 pt-6'>
-        <div className='mx-auto max-w-[1400px] px-6 md:px-8 lg:px-10'>
-          <div className='mx-auto max-w-[1100px] rounded-[28px] bg-white p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] md:p-12'>
-            <div className='flex flex-col items-center text-center'>
-              <div className='mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#fbeee3] text-[#C2761A]'>
-                <ShieldCheck className='h-7 w-7' />
-              </div>
-              <h3 className='text-2xl font-bold text-[#111827] md:text-[28px]'>
-                100% Satisfaction Guarantee
-              </h3>
-              <p className='mt-4 max-w-[900px] text-base leading-8 text-[#40536b] md:text-[18px]'>
-                We stand behind our work with a 90-day warranty on all repairs.
-                If you&apos;re not completely satisfied with our service, we&apos;ll make it
-                right. Quality repairs, honest pricing, and your satisfaction
-                guaranteed.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
