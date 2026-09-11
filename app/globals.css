@@ -49,6 +49,47 @@
     @apply text-xs font-bold uppercase tracking-widest;
   }
 
+  /* ---------- Brand-tinted surfaces ----------
+     The values live on the theme (see --btn-wash and friends below) so each
+     brand page tints itself. Kept as plain var() lookups: color-mix() over a
+     var() does not survive the CSS optimiser. */
+  .bg-wash {
+    background-color: var(--btn-wash);
+  }
+
+  .bg-wash-deep {
+    background-color: var(--btn-wash-deep);
+  }
+
+  .border-wash {
+    border-color: var(--btn-line);
+  }
+
+  /* The accent is too light to read as text on its own wash, so anything
+     set in the brand colour on a pale surface uses this darker tone. */
+  .text-btn-deep {
+    color: var(--btn-deep);
+  }
+
+  /* Hero overlay. Two layers: a brand wash across the top-left for identity,
+     and a vertical scrim so the headline, subheading and the feature row at
+     the bottom stay legible wherever the photo happens to be bright. */
+  .hero-veil {
+    background:
+      linear-gradient(
+        135deg,
+        var(--btn-veil-1) 0%,
+        var(--btn-veil-2) 42%,
+        transparent 68%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(9, 11, 15, 0.62) 0%,
+        rgba(9, 11, 15, 0.38) 42%,
+        rgba(9, 11, 15, 0.86) 100%
+      );
+  }
+
   /* ---------- Body scale ---------- */
   .t-lead {
     @apply text-base leading-7 md:text-xl md:leading-8;
@@ -189,20 +230,38 @@
     /* Brand accent. --btn-ink is the text colour that sits on top of it. */
     --btn: #C2761A;
     --btn-ink: oklch(0.985 0 0);
+    --btn-wash: #FDFAF6;
+    --btn-wash-deep: #FAF3EA;
+    --btn-line: #F5E9DA;
+    --btn-veil-1: rgba(194, 118, 26, 0.55);
+    --btn-veil-2: rgba(194, 118, 26, 0.18);
+    --btn-deep: #A8650E;
 }
 
 /* Per-page brand themes. The brand page marks itself with data-brand and
    :has() lifts that to <body>, so the shared navbar and footer pick up the
    same accent as the page they are sitting on. */
 body:has([data-brand='bosch']) {
-    --btn: #FF5500;
+    --btn: #ed0007;
     --btn-ink: #ffffff;
+    --btn-wash: #FEF5F5;
+    --btn-wash-deep: #FDE8E9;
+    --btn-line: #FCD6D7;
+    --btn-veil-1: rgba(237, 0, 7, 0.55);
+    --btn-veil-2: rgba(237, 0, 7, 0.18);
+    --btn-deep: #D50006;
 }
 
 body:has([data-brand='siemens']) {
     --btn: #3cc8be;
     /* White on this teal is 2.06:1. Dark ink on it is 8.46:1. */
     --btn-ink: #101a2b;
+    --btn-wash: #F7FDFC;
+    --btn-wash-deep: #EDFAF9;
+    --btn-line: #E0F6F5;
+    --btn-veil-1: rgba(60, 200, 190, 0.55);
+    --btn-veil-2: rgba(60, 200, 190, 0.18);
+    --btn-deep: #257C76;
 }
 
 .dark {

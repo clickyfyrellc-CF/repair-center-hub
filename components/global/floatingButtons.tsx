@@ -6,7 +6,7 @@ import { phoneLink, whatsappLink } from '@/lib/contact';
 const FloatingButtons = () => {
   return (
     <>
-      <div className='fixed left-3 md:left-4 bottom-4 -translate-y-1/2 z-50 flex items-center gap-2'>
+      <div className='fixed left-3 md:left-4 bottom-5 z-50 flex items-center gap-2'>
         <Link
           href={phoneLink}
           aria-label='Call us now'
@@ -24,7 +24,7 @@ const FloatingButtons = () => {
         target='_blank'
         rel='noopener noreferrer'
         aria-label='Message us on WhatsApp'
-        className='fixed right-3 md:right-4 bottom-4 -translate-y-1/2 z-50 w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg hover:scale-105 transition-transform duration-200'
+        className='fixed right-3 md:right-4 bottom-5 z-50 w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg hover:scale-105 transition-transform duration-200'
       >
         <FaWhatsapp className='w-6 h-6 md:w-7 md:h-7' />
       </Link>

@@ -178,7 +178,7 @@ function ServiceIcon({ type }: { type: ServiceIconType }) {
 
 export default function LGPage() {
   return (
-    <main className='bg-[#f7f8fa] text-[#111827]'>
+    <main data-brand='lg' className='bg-wash text-[#111827]'>
       <section className='relative isolate overflow-hidden bg-[#1a0f11]'>
         <div className='absolute inset-0'>
           <Image
@@ -186,14 +186,14 @@ export default function LGPage() {
             alt='LG appliance kitchen background'
             fill
             priority
-            className='object-cover opacity-90'
+            className='object-cover'
             sizes='100vw'
           />
         </div>
-        <div className='absolute inset-0 bg-[rgba(245,166,35,0.25)]' />
+        <div className='absolute inset-0 hero-veil' />
 
         <div className='relative mx-auto max-w-[1400px] px-6 md:px-8 lg:px-10'>
-          <div className='flex h-auto min-h-0 items-center justify-center py-4 md:h-[580px] md:min-h-[580px] md:py-0'>
+          <div className='flex h-auto min-h-0 items-center justify-center py-14 md:h-[600px] md:min-h-[600px] md:py-0'>
             <div className='w-full max-w-[1200px] text-center'>
               <div className='mb-3 flex justify-center md:mb-8'>
                 <span className='inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/15 px-4 py-2 text-sm font-semibold text-white backdrop-blur-sm md:px-6 md:py-3 md:text-base'>
@@ -230,7 +230,7 @@ export default function LGPage() {
                 </a>
               </div>
 
-              <div className='mt-5 flex flex-col items-center justify-center gap-3 md:mt-12 md:flex-row md:gap-12'>
+              <div className='mx-auto mt-8 flex max-w-[900px] flex-col items-center justify-center gap-6 border-t border-white/20 pt-7 md:mt-12 md:flex-row md:gap-14 md:pt-9'>
                 {[
                   ['clock', 'Same Day Service'],
                   ['settings', 'Quality Parts'],
@@ -238,14 +238,14 @@ export default function LGPage() {
                 ].map(([icon, label]) => (
                   <div
                     key={label}
-                    className='flex flex-col items-center gap-3 text-white'
+                    className='flex flex-col items-center gap-2.5 text-white md:flex-row md:gap-3'
                   >
-                    <div className='flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-sm md:h-14 md:w-14'>
+                    <div className='flex h-11 w-11 items-center justify-center rounded-full border border-white/25 bg-white/15 backdrop-blur-sm md:h-12 md:w-12'>
                       {icon === 'clock' && <Clock3 className='h-6 w-6' />}
                       {icon === 'settings' && <Wrench className='h-6 w-6' />}
                       {icon === 'expert' && <Sparkles className='h-6 w-6' />}
                     </div>
-                    <span className='text-sm font-medium md:text-lg'>
+                    <span className='text-sm font-semibold md:text-base'>
                       {label}
                     </span>
                   </div>
@@ -256,12 +256,12 @@ export default function LGPage() {
         </div>
       </section>
 
-      <section className='bg-[#F5F6F7]'>
+      <section className='bg-wash-deep border-y border-wash'>
         <div className='mx-auto max-w-[1400px] px-6 py-[55px] md:px-8 lg:px-10'>
           <div className='grid gap-6 md:grid-cols-2 xl:grid-cols-4'>
             {stats.map((item) => (
               <div key={item.label} className='text-center'>
-                <div className='text-4xl font-bold text-[#C2761A] md:text-[34px]'>{item.value}</div>
+                <div className='text-4xl font-bold text-btn-deep md:text-[34px]'>{item.value}</div>
                 <div className='mt-2 text-base font-medium text-[#40536b]'>{item.label}</div>
               </div>
             ))}
@@ -306,7 +306,7 @@ export default function LGPage() {
 
                 <div className='p-6'>
                   <div className='mb-5 flex items-center gap-4'>
-                    <div className='flex h-12 w-12 items-center justify-center rounded-xl bg-[#fbeee3] text-[#C2761A]'>
+                    <div className='flex h-12 w-12 items-center justify-center rounded-xl bg-[#fbeee3] text-btn-deep'>
                       <ServiceIcon type={card.icon} />
                     </div>
                     <h3 className='t-h5 text-heading'>{card.title}</h3>
@@ -341,7 +341,7 @@ export default function LGPage() {
         </div>
       </section>
 
-      <section className='bg-[#f7f8fa] py-16 md:py-20'>
+      <section className='bg-wash py-16 md:py-20'>
         <div className='mx-auto max-w-[1400px] px-6 md:px-8 lg:px-10'>
           <h2 className='text-center t-h2 text-heading'>
             Common Issues & Solutions
@@ -376,7 +376,7 @@ export default function LGPage() {
                 </div>
 
                 <div className='space-y-4 p-5'>
-                  <span className='inline-flex rounded-full bg-[#fbeee3] px-3 py-1 text-sm font-semibold text-[#C2761A]'>
+                  <span className='inline-flex rounded-full bg-[#fbeee3] px-3 py-1 text-sm font-semibold text-btn-deep'>
                     {video.category}
                   </span>
 
@@ -393,11 +393,11 @@ export default function LGPage() {
         </div>
       </section>
 
-      <section className='bg-[#f7f8fa] pb-8 pt-2 md:pb-10'>
+      <section className='bg-wash pb-8 pt-2 md:pb-10'>
         <div className='mx-auto max-w-[1400px] px-6 md:px-8 lg:px-10'>
           <div className='rounded-[28px] bg-[#F5F6F7] p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] md:p-10'>
             <div className='flex items-start gap-3'>
-              <div className='mt-1 flex h-9 w-9 items-center justify-center rounded-full bg-[#fbeee3] text-[#C2761A]'>
+              <div className='mt-1 flex h-9 w-9 items-center justify-center rounded-full bg-[#fbeee3] text-btn-deep'>
                 <Info className='h-5 w-5' />
               </div>
               <div>
