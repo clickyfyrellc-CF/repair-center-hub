@@ -20,7 +20,7 @@ const BrandLogos = () => {
       <Container>
         <div className='flex items-center justify-center flex-col text-center mb-16'>
           <div className='inline-block border-2 border-gray-300 rounded-lg px-8 py-4 mb-8'>
-            <h2 className='text-2xl font-bold md:text-4xl text-gray-800'>
+            <h2 className='t-h2 text-heading'>
               OUR FAMILIAR BRANDS
             </h2>
           </div>

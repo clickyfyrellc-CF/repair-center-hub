@@ -10,7 +10,7 @@ const brandServices = [
 const ServiceList = () => {
   return (
     <div className='text-secondary'>
-      <h3 className='font-semibold text-lg'>Our Repair Services</h3>
+      <h3 className='t-h6'>Our Repair Services</h3>
       <ul>
         {services.map((service) => (
           <li className='mt-2' key={service.href}>

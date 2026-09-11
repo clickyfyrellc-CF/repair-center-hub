@@ -4,7 +4,7 @@ import Link from 'next/link';
 const LinkList = () => {
   return (
     <div className='text-secondary'>
-      <h3 className='font-semibold text-lg'>Links</h3>
+      <h3 className='t-h6'>Links</h3>
       <ul>
         {links.map((link) => (
           <li className='mt-2' key={link.href}>

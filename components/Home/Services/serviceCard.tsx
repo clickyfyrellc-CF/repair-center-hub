@@ -40,8 +40,8 @@ const ServiceCard = ({
       </CardHeader>
 
       <CardContent className='pt-4 flex-1'>
-        <CardTitle className='text-xl mb-2'>{title}</CardTitle>
-        <CardDescription className='text-sm leading-relaxed'>
+        <CardTitle className='t-h5 text-heading mb-2'>{title}</CardTitle>
+        <CardDescription className='t-body-sm'>
           {description}
         </CardDescription>
       </CardContent>

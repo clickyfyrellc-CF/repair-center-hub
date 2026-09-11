@@ -5,7 +5,7 @@ const FooterContent = () => {
   return (
     <div className='md:col-span-2'>
       <FooterLogo />
-      <p className='md:max-w-sm text-secondary mt-4 text-sm'>
+      <p className='md:max-w-sm t-meta text-secondary mt-4'>
         We run a separate appliance service center for each brand we repair.
         This page keeps all of them together, so you can go straight to the one
         you need.

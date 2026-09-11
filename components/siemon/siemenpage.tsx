@@ -204,11 +204,11 @@ export default function SiemensPage() {
                 </span>
               </div>
 
-              <h1 className='mx-auto max-w-[1100px] text-3xl font-bold leading-[1.08] text-white md:text-5xl lg:text-[64px]'>
+              <h1 className='mx-auto max-w-[1100px] t-h1 text-white'>
                 Professional Siemens Appliance Repair in UAE
               </h1>
 
-              <p className='mx-auto mt-3 max-w-[950px] text-sm leading-5 text-white/90 md:mt-6 md:text-[22px] md:leading-8'>
+              <p className='mx-auto mt-3 max-w-[950px] t-lead text-white/90 md:mt-6'>
                 Expert repair solutions for all Siemens appliances with quality
                 parts and trained technicians
               </p>
@@ -272,11 +272,11 @@ export default function SiemensPage() {
       <section className='bg-white py-16 md:py-20'>
         <div className='mx-auto max-w-[1400px] px-6 md:px-8 lg:px-10'>
           <div className='max-w-[1200px]'>
-            <h2 className='text-3xl font-bold leading-[1.2] text-[#111827] md:text-[34px]'>
+            <h2 className='t-h3 text-heading'>
               Our Siemens Repair Services
             </h2>
             <div className='mt-4 h-[5px] w-[105px] bg-[#C2761A]' />
-            <p className='mt-5 max-w-[920px] text-base leading-7 text-[#40536b] md:text-lg md:leading-7'>
+            <p className='mt-5 max-w-[920px] t-body text-body'>
               Comprehensive repair and maintenance services for all Siemens
               appliances with quality parts and expert care
             </p>
@@ -309,13 +309,13 @@ export default function SiemensPage() {
                     <div className='flex h-12 w-12 items-center justify-center rounded-xl bg-[#fbeee3] text-[#C2761A]'>
                       <ServiceIcon type={card.icon} />
                     </div>
-                    <h3 className='text-xl font-bold text-[#111827]'>{card.title}</h3>
+                    <h3 className='t-h5 text-heading'>{card.title}</h3>
                   </div>
 
-                  <p className='text-sm leading-6 text-[#40536b]'>{card.description}</p>
+                  <p className='t-body-sm text-body'>{card.description}</p>
 
                   <div className='mt-6'>
-                    <p className='mb-3 text-sm font-semibold text-[#111827]'>Common Issues:</p>
+                    <p className='mb-3 t-meta font-semibold text-heading'>Common Issues:</p>
                     <ul className='space-y-2 text-[#40536b]'>
                       {card.issues.map((issue) => (
                         <li key={issue} className='flex items-center gap-2'>
@@ -343,10 +343,10 @@ export default function SiemensPage() {
 
       <section className='bg-[#f7f8fa] py-16 md:py-20'>
         <div className='mx-auto max-w-[1400px] px-6 md:px-8 lg:px-10'>
-          <h2 className='text-center text-3xl font-bold text-[#111827] md:text-[44px]'>
+          <h2 className='text-center t-h2 text-heading'>
             Common Issues & Solutions
           </h2>
-          <p className='mx-auto mt-4 max-w-[800px] text-center text-lg text-[#40536b] md:text-xl'>
+          <p className='mx-auto mt-4 max-w-[800px] text-center t-lead text-body'>
             Watch our expert troubleshooting guides for common Siemens appliance
             problems
           </p>
@@ -380,7 +380,7 @@ export default function SiemensPage() {
                     {video.category}
                   </span>
 
-                  <h3 className='text-xl font-bold text-[#111827]'>{video.title}</h3>
+                  <h3 className='t-h5 text-heading'>{video.title}</h3>
 
                   <div className='flex items-center gap-2 text-sm font-medium text-[#40536b]'>
                     <Eye className='h-4 w-4' />
@@ -401,10 +401,10 @@ export default function SiemensPage() {
                 <Info className='h-5 w-5' />
               </div>
               <div>
-                <h2 className='text-2xl font-bold text-[#142033] md:text-[26px]'>
+                <h2 className='t-h4 text-heading'>
                   Independent Service Provider
                 </h2>
-                <p className='mt-3 text-sm leading-6 text-[#40536b] md:text-base md:leading-7'>
+                <p className='mt-3 t-body-sm text-body'>
                   We are an independent appliance repair service provider in
                   UAE. All brand names and trademarks mentioned on this
                   website (including <strong>Siemens</strong>,{' '}

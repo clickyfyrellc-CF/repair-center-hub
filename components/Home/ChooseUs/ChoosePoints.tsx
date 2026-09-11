@@ -10,8 +10,8 @@ const ChoosePoints = () => {
             <Check className='w-3 h-3 text-white' />
           </div>
           <div>
-            <p className='font-semibold text-white'>{point.title}</p>
-            <p className='text-sm text-muted'>{point.description}</p>
+            <p className='t-body-sm font-semibold text-white'>{point.title}</p>
+            <p className='t-meta text-muted'>{point.description}</p>
           </div>
         </li>
       ))}

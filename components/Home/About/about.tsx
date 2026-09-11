@@ -8,18 +8,18 @@ const About = () => {
       <Container>
         <div className='grid md:grid-cols-2 gap-8 items-stretch'>
           <div className='flex flex-col justify-center'>
-            <span className='text-xs font-bold tracking-widest uppercase mb-2'>
+            <span className='t-eyebrow mb-2'>
               About us
             </span>
-            <h2 className='text-3xl font-semibold mb-4 leading-snug'>
+            <h2 className='t-h2 mb-4'>
               Trusted Appliance Repair Experts Serving the UAE
             </h2>
-            <p className='text-muted text-sm leading-relaxed mb-3'>
+            <p className='t-body-sm text-muted mb-3'>
               We repair home appliances across the UAE. Instead of one crowded
               website, we keep a separate service center for each brand we work
               on, so you land on the pages that actually match your appliance.
             </p>
-            <p className='text-muted text-sm leading-relaxed mb-6'>
+            <p className='t-body-sm text-muted mb-6'>
               The technicians, the pricing, and the warranty are the same
               wherever you start. This page exists so you never have to guess
               which site to open.
@@ -39,10 +39,10 @@ const About = () => {
             />
             <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent' />
             <div className='absolute bottom-0 left-0 right-0 p-6 z-10'>
-              <h3 className='text-white text-xl font-semibold mb-2 leading-snug'>
+              <h3 className='t-h5 text-white mb-2'>
                 The same standard everywhere
               </h3>
-              <p className='text-white/85 text-sm leading-relaxed mb-3'>
+              <p className='t-body-sm text-white/85 mb-3'>
                 Whichever site you start from, the same technicians handle the
                 job, at the same price, with the same warranty.
               </p>

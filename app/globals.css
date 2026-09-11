@@ -15,6 +15,57 @@
       hover:after:w-full;
   }
 
+  /* ---------- Typography scale ----------
+     One ramp for the whole site: 64 / 44 / 34 / 26 / 20.
+     These set size, weight and leading only. Colour stays on the element so
+     the same level works on a light section and on a dark or coloured one. */
+  .t-h1 {
+    @apply text-3xl font-bold leading-[1.08] md:text-5xl lg:text-[64px];
+  }
+
+  .t-h2 {
+    @apply text-3xl font-bold leading-[1.15] md:text-[44px];
+  }
+
+  .t-h3 {
+    @apply text-2xl font-bold leading-[1.2] md:text-[34px];
+  }
+
+  .t-h4 {
+    @apply text-2xl font-bold leading-[1.25] md:text-[26px];
+  }
+
+  .t-h5 {
+    @apply text-xl font-bold leading-snug;
+  }
+
+  /* Column headings in the footer and other compact UI. */
+  .t-h6 {
+    @apply text-lg font-semibold leading-snug;
+  }
+
+  /* Small caps label that sits above a heading. */
+  .t-eyebrow {
+    @apply text-xs font-bold uppercase tracking-widest;
+  }
+
+  /* ---------- Body scale ---------- */
+  .t-lead {
+    @apply text-base leading-7 md:text-xl md:leading-8;
+  }
+
+  .t-body {
+    @apply text-base leading-7 md:text-lg md:leading-8;
+  }
+
+  .t-body-sm {
+    @apply text-sm leading-6 md:text-base md:leading-7;
+  }
+
+  .t-meta {
+    @apply text-sm leading-6;
+  }
+
   .collapsible-content {
     overflow: hidden;
   }
@@ -94,6 +145,10 @@
     --radius-4xl: calc(var(--radius) * 2.6);
 
     --color-btn: #C2761A;
+
+    /* Text colours, previously hard-coded per page. */
+    --color-heading: #111827;
+    --color-body: #40536b;
 }
 
 :root {
