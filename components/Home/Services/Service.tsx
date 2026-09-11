@@ -3,13 +3,12 @@ import ServiceCardsList from './serviceCardsList';
 
 const Service = () => {
   return (
-    <section id='services' className='py-14'>
+    <section id='services' className='bg-wash py-16 md:py-20'>
       <Container>
-        <div className='flex items-center justify-center flex-col text-center'>
-          <h2 className='t-h2 text-heading'>
-            Appliance repair services
-          </h2>
-          <p className='mt-3 t-lead text-body md:mt-2 md:max-w-3xl'>
+        <div className='mx-auto max-w-2xl text-center'>
+          <span className='t-eyebrow text-btn-deep'>What we fix</span>
+          <h2 className='t-h2 text-heading mt-3'>Appliance repair services</h2>
+          <p className='t-body text-body mt-4'>
             We repair every major home appliance. Tell us what stopped working
             and we will send a technician who has fixed it before.
           </p>

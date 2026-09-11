@@ -1,17 +1,19 @@
+import { Check } from 'lucide-react';
+
 const tags = ['Same-day service', 'Trained technicians', 'Warranty on repair'];
 
 const Tags = () => {
   return (
-    <div className='flex flex-wrap gap-2 mt-6 justify-center md:justify-start'>
+    <ul className='mt-8 flex flex-wrap justify-center gap-x-6 gap-y-3 border-t border-wash pt-6 md:justify-start'>
       {tags.map((tag) => (
-        <span
-          key={tag}
-          className='bg-background border border-border text-xs py-1 px-3 rounded-2xl'
-        >
-          {tag}
-        </span>
+        <li key={tag} className='flex items-center gap-2'>
+          <span className='flex h-5 w-5 items-center justify-center rounded-full bg-wash-deep'>
+            <Check className='h-3 w-3 text-btn-deep' />
+          </span>
+          <span className='t-meta font-medium text-body'>{tag}</span>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 

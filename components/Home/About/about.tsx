@@ -1,35 +1,47 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import { FaWhatsapp } from 'react-icons/fa';
 import Container from '@/components/global/container';
-import WhatsappButton from '@/components/global/whatsappButton';
+import { whatsappLink } from '@/lib/contact';
 
 const About = () => {
   return (
-    <section id='about' className='py-16 bg-btn text-secondary'>
+    // This used to be a solid block of the brand colour. With the closing
+    // banner already in that colour, two heavy slabs on one page was a lot;
+    // white here lets the banner land as the single strong note.
+    <section id='about' className='bg-white py-16 md:py-20'>
       <Container>
-        <div className='grid md:grid-cols-2 gap-8 items-stretch'>
-          <div className='flex flex-col justify-center'>
-            <span className='t-eyebrow mb-2'>
-              About us
-            </span>
-            <h2 className='t-h2 mb-4'>
+        <div className='grid items-center gap-10 md:grid-cols-2 md:gap-14'>
+          <div className='text-center md:text-left'>
+            <span className='t-eyebrow text-btn-deep'>About us</span>
+            <h2 className='t-h3 text-heading mt-3'>
               Trusted Appliance Repair Experts Serving the UAE
             </h2>
-            <p className='t-body-sm text-muted mb-3'>
+            <p className='t-body text-body mt-4'>
               We repair home appliances across the UAE. Instead of one crowded
               website, we keep a separate service center for each brand we work
               on, so you land on the pages that actually match your appliance.
             </p>
-            <p className='t-body-sm text-muted mb-6'>
+            <p className='t-body text-body mt-4'>
               The technicians, the pricing, and the warranty are the same
               wherever you start. This page exists so you never have to guess
               which site to open.
             </p>
-            <div className='flex gap-3'>
-              <WhatsappButton variant='outline' label='Message us' />
+
+            <div className='mt-8 flex justify-center md:justify-start'>
+              <Link
+                href={whatsappLink}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='inline-flex items-center justify-center gap-2.5 rounded-full bg-btn px-7 py-4 text-base font-semibold text-btn-ink shadow-lg shadow-black/10 transition hover:opacity-90'
+              >
+                <FaWhatsapp className='h-5 w-5' />
+                Message us
+              </Link>
             </div>
           </div>
 
-          <div className='relative rounded-xl overflow-hidden min-h-72'>
+          <div className='relative min-h-80 overflow-hidden rounded-2xl shadow-[0_18px_50px_rgba(0,0,0,0.14)] md:min-h-96'>
             <Image
               src='/images/technicians.jpg'
               alt='Technician working on a home appliance'
@@ -37,20 +49,18 @@ const About = () => {
               sizes='(max-width: 768px) 100vw, 50vw'
               className='object-cover'
             />
-            <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent' />
-            <div className='absolute bottom-0 left-0 right-0 p-6 z-10'>
-              <h3 className='t-h5 text-white mb-2'>
-                The same standard everywhere
-              </h3>
-              <p className='t-body-sm text-white/85 mb-3'>
+            <div className='absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent' />
+            <div className='absolute inset-x-0 bottom-0 z-10 p-6 md:p-7'>
+              <h3 className='t-h5 text-white'>The same standard everywhere</h3>
+              <p className='t-body-sm mt-2 text-white/85'>
                 Whichever site you start from, the same technicians handle the
                 job, at the same price, with the same warranty.
               </p>
-              <div className='flex gap-2 flex-wrap'>
+              <div className='mt-4 flex flex-wrap gap-2'>
                 {['Same-day service', 'Upfront quotes'].map((tag) => (
                   <span
                     key={tag}
-                    className='bg-white/15 border border-white/25 text-white text-xs px-3 py-1 rounded-full'
+                    className='rounded-full border border-white/25 bg-white/15 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm'
                   >
                     {tag}
                   </span>
