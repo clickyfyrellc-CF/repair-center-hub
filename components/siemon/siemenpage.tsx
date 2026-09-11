@@ -178,8 +178,8 @@ function ServiceIcon({ type }: { type: ServiceIconType }) {
 
 export default function SiemensPage() {
   return (
-    <main className='bg-[#f7f8fa] text-[#111827]'>
-      <section className='relative isolate overflow-hidden bg-[#1a0f11]'>
+    <main data-brand='siemens' className='bg-[#f7f8fa] text-[#111827]'>
+      <section className='relative isolate overflow-hidden bg-[#061413]'>
         <div className='absolute inset-0'>
           <Image
             src='/images/hero.jpg'
@@ -216,7 +216,7 @@ export default function SiemensPage() {
               <div className='mt-4 flex flex-col items-center justify-center gap-3 md:mt-8 md:flex-row md:gap-5'>
                 <Link
                   href={whatsappLink}
-                  className='inline-flex items-center gap-3 rounded-full bg-[#C2761A] px-6 py-3 text-base font-semibold text-white shadow-lg shadow-orange-900/25 transition hover:bg-[#b66f16] md:px-8 md:py-5 md:text-lg'
+                  className='inline-flex items-center gap-3 rounded-full bg-[#3cc8be] px-6 py-3 text-base font-semibold text-[#101a2b] shadow-lg shadow-teal-900/25 transition hover:bg-[#36B4AB] md:px-8 md:py-5 md:text-lg'
                 >
                   <CalendarDays className='h-5 w-5' />
                   Book Repair Now
@@ -225,7 +225,7 @@ export default function SiemensPage() {
                   href={whatsappLink}
                   className='inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 text-base font-semibold text-[#101a2b] shadow-lg shadow-black/10 transition hover:bg-slate-100 md:px-8 md:py-5 md:text-lg'
                 >
-                  <Phone className='h-5 w-5 text-[#C2761A]' />
+                  <Phone className='h-5 w-5 text-[#3cc8be]' />
                   Call +971 52 731 5207
                 </a>
               </div>
@@ -261,7 +261,7 @@ export default function SiemensPage() {
           <div className='grid gap-6 md:grid-cols-2 xl:grid-cols-4'>
             {stats.map((item) => (
               <div key={item.label} className='text-center'>
-                <div className='text-4xl font-bold text-[#C2761A] md:text-[34px]'>{item.value}</div>
+                <div className='text-4xl font-bold text-[#3cc8be] md:text-[34px]'>{item.value}</div>
                 <div className='mt-2 text-base font-medium text-[#40536b]'>{item.label}</div>
               </div>
             ))}
@@ -275,7 +275,7 @@ export default function SiemensPage() {
             <h2 className='t-h3 text-heading'>
               Our Siemens Repair Services
             </h2>
-            <div className='mt-4 h-[5px] w-[105px] bg-[#C2761A]' />
+            <div className='mt-4 h-[5px] w-[105px] bg-[#3cc8be]' />
             <p className='mt-5 max-w-[920px] t-body text-body'>
               Comprehensive repair and maintenance services for all Siemens
               appliances with quality parts and expert care
@@ -292,7 +292,7 @@ export default function SiemensPage() {
                 key={card.title}
                 className='overflow-hidden rounded-[20px] border border-slate-100 bg-white shadow-[0_4px_18px_rgba(0,0,0,0.10)] transition-transform transition-shadow duration-300 ease-out hover:-translate-y-1.5 hover:shadow-[0_12px_28px_rgba(0,0,0,0.14)]'
               >
-                <div className='flex h-[220px] items-center justify-center bg-[#f7e7d8] p-6'>
+                <div className='flex h-[220px] items-center justify-center bg-[#DCF5F3] p-6'>
                   <div className='relative h-full w-full'>
                     <Image
                       src={card.image}
@@ -306,7 +306,7 @@ export default function SiemensPage() {
 
                 <div className='p-6'>
                   <div className='mb-5 flex items-center gap-4'>
-                    <div className='flex h-12 w-12 items-center justify-center rounded-xl bg-[#fbeee3] text-[#C2761A]'>
+                    <div className='flex h-12 w-12 items-center justify-center rounded-xl bg-[#ECFAF8] text-[#257C76]'>
                       <ServiceIcon type={card.icon} />
                     </div>
                     <h3 className='t-h5 text-heading'>{card.title}</h3>
@@ -319,8 +319,8 @@ export default function SiemensPage() {
                     <ul className='space-y-2 text-[#40536b]'>
                       {card.issues.map((issue) => (
                         <li key={issue} className='flex items-center gap-2'>
-                          <span className='text-[#C2761A]'>
-                            <span className='inline-block h-2.5 w-2.5 rounded-full border border-[#C2761A]' />
+                          <span className='text-[#3cc8be]'>
+                            <span className='inline-block h-2.5 w-2.5 rounded-full border border-[#3cc8be]' />
                           </span>
                           <span className='text-sm'>{issue}</span>
                         </li>
@@ -332,7 +332,7 @@ export default function SiemensPage() {
                 <div className='border-t border-slate-200 px-6 py-4'>
                   <div className='flex cursor-pointer items-center justify-between text-base font-semibold text-[#111827]'>
                     <span>Maintenance Tips</span>
-                    <ChevronDown className='h-5 w-5 text-[#C2761A]' />
+                    <ChevronDown className='h-5 w-5 text-[#3cc8be]' />
                   </div>
                 </div>
               </article>
@@ -370,13 +370,13 @@ export default function SiemensPage() {
                   </div>
                   <div className='absolute inset-0 flex items-center justify-center'>
                     <div className='flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-lg'>
-                      <div className='ml-1 h-0 w-0 border-y-[10px] border-l-[16px] border-y-transparent border-l-[#C2761A]' />
+                      <div className='ml-1 h-0 w-0 border-y-[10px] border-l-[16px] border-y-transparent border-l-[#3cc8be]' />
                     </div>
                   </div>
                 </div>
 
                 <div className='space-y-4 p-5'>
-                  <span className='inline-flex rounded-full bg-[#fbeee3] px-3 py-1 text-sm font-semibold text-[#C2761A]'>
+                  <span className='inline-flex rounded-full bg-[#ECFAF8] px-3 py-1 text-sm font-semibold text-[#257C76]'>
                     {video.category}
                   </span>
 
@@ -397,7 +397,7 @@ export default function SiemensPage() {
         <div className='mx-auto max-w-[1400px] px-6 md:px-8 lg:px-10'>
           <div className='rounded-[28px] bg-[#F5F6F7] p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] md:p-10'>
             <div className='flex items-start gap-3'>
-              <div className='mt-1 flex h-9 w-9 items-center justify-center rounded-full bg-[#fbeee3] text-[#C2761A]'>
+              <div className='mt-1 flex h-9 w-9 items-center justify-center rounded-full bg-[#ECFAF8] text-[#257C76]'>
                 <Info className='h-5 w-5' />
               </div>
               <div>

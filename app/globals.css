@@ -144,7 +144,8 @@
     --radius-3xl: calc(var(--radius) * 2.2);
     --radius-4xl: calc(var(--radius) * 2.6);
 
-    --color-btn: #C2761A;
+    --color-btn: var(--btn);
+    --color-btn-ink: var(--btn-ink);
 
     /* Text colours, previously hard-coded per page. */
     --color-heading: #111827;
@@ -185,8 +186,23 @@
     --sidebar-border: oklch(0.922 0 0);
     --sidebar-ring: oklch(0.708 0 0);
 
+    /* Brand accent. --btn-ink is the text colour that sits on top of it. */
+    --btn: #C2761A;
+    --btn-ink: oklch(0.985 0 0);
+}
 
-    --color-btn: #C2761A;
+/* Per-page brand themes. The brand page marks itself with data-brand and
+   :has() lifts that to <body>, so the shared navbar and footer pick up the
+   same accent as the page they are sitting on. */
+body:has([data-brand='bosch']) {
+    --btn: #FF5500;
+    --btn-ink: #ffffff;
+}
+
+body:has([data-brand='siemens']) {
+    --btn: #3cc8be;
+    /* White on this teal is 2.06:1. Dark ink on it is 8.46:1. */
+    --btn-ink: #101a2b;
 }
 
 .dark {

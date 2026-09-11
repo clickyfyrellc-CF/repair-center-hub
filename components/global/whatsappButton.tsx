@@ -19,7 +19,7 @@ const WhatsappButton = ({
       variant={variant}
       className={cn(
         'rounded-sm',
-        variant === 'default' && 'bg-btn hover:bg-btn/90',
+        variant === 'default' && 'bg-btn text-btn-ink hover:bg-btn/90',
         variant === 'outline' && 'text-foreground',
         className,
       )}
