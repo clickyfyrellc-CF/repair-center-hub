@@ -252,6 +252,18 @@ body:has([data-brand='bosch']) {
     --btn-deep: #D50006;
 }
 
+body:has([data-brand='lg']) {
+    --btn: #a50034;
+    --btn-ink: #ffffff;
+    /* Dark enough to read as text on its own washes, so no separate tone. */
+    --btn-deep: #a50034;
+    --btn-wash: #FBF5F7;
+    --btn-wash-deep: #F7E8ED;
+    --btn-line: #F1D6DF;
+    --btn-veil-1: rgba(165, 0, 52, 0.55);
+    --btn-veil-2: rgba(165, 0, 52, 0.18);
+}
+
 body:has([data-brand='siemens']) {
     --btn: #3cc8be;
     /* White on this teal is 2.06:1. Dark ink on it is 8.46:1. */
