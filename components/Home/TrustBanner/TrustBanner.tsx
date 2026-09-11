@@ -9,11 +9,11 @@ const TrustBanner = () => {
     // Was a thin strip with the heading, a line of copy and a button crammed
     // onto one row. It is the closing call to action, so it gets real height
     // and a clear order: statement, then the two ways to reach us.
-    <section className='bg-btn py-14 md:py-16'>
-      <Container className='flex flex-col items-center gap-8 text-center md:flex-row md:justify-between md:gap-12 md:text-left'>
+    <section className='bg-btn-surface py-14 md:py-16'>
+      <Container className='flex flex-col gap-8 text-left md:flex-row md:items-center md:justify-between md:gap-12'>
         <div className='max-w-xl'>
-          <h2 className='t-h3 text-btn-ink'>Service you can trust</h2>
-          <p className='t-body mt-3 text-btn-ink/85'>
+          <h2 className='t-h3 text-btn-surface-ink'>Service you can trust</h2>
+          <p className='t-body mt-3 text-btn-surface-ink/85'>
             Tell us what stopped working and we will take it from there. You get
             a clear price before any work starts.
           </p>
@@ -31,7 +31,7 @@ const TrustBanner = () => {
           </Link>
           <a
             href={phoneLink}
-            className='inline-flex items-center justify-center gap-2.5 rounded-full border border-btn-ink/35 px-7 py-4 text-base font-semibold text-btn-ink transition hover:bg-btn-ink/10'
+            className='inline-flex items-center justify-center gap-2.5 rounded-full border border-btn-surface-ink/35 px-7 py-4 text-base font-semibold text-btn-surface-ink transition hover:bg-btn-surface-ink/10'
           >
             <Phone className='h-5 w-5' />
             Call us

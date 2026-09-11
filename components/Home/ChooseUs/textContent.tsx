@@ -5,7 +5,7 @@ import Stats from './stats';
 
 const TextContent = () => {
   return (
-    <div className='flex flex-col justify-center text-center md:py-4 md:text-left'>
+    <div className='flex flex-col justify-center text-left md:py-4'>
       <span className='t-eyebrow text-btn-deep'>Why us</span>
       <h2 className='t-h3 text-heading mt-3'>Why work with us</h2>
       <p className='t-body text-body mt-4'>
@@ -15,7 +15,7 @@ const TextContent = () => {
 
       <Stats />
 
-      <div className='mt-8 flex justify-center md:justify-start'>
+      <div className='mt-8 flex'>
         <Link
           href={whatsappLink}
           target='_blank'

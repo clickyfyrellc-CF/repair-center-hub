@@ -5,7 +5,7 @@ const Service = () => {
   return (
     <section id='services' className='bg-wash py-16 md:py-20'>
       <Container>
-        <div className='mx-auto max-w-2xl text-center'>
+        <div className='max-w-2xl text-left md:mx-auto md:text-center'>
           <span className='t-eyebrow text-btn-deep'>What we fix</span>
           <h2 className='t-h2 text-heading mt-3'>Appliance repair services</h2>
           <p className='t-body text-body mt-4'>

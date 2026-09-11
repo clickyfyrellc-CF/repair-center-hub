@@ -4,7 +4,7 @@ const tags = ['Same-day service', 'Trained technicians', 'Warranty on repair'];
 
 const Tags = () => {
   return (
-    <ul className='mt-8 flex flex-wrap justify-center gap-x-6 gap-y-3 border-t border-wash pt-6 md:justify-start'>
+    <ul className='mt-8 flex flex-wrap gap-x-6 gap-y-3 border-t border-wash pt-6'>
       {tags.map((tag) => (
         <li key={tag} className='flex items-center gap-2'>
           <span className='flex h-5 w-5 items-center justify-center rounded-full bg-wash-deep'>

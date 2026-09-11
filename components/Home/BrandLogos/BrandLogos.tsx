@@ -20,7 +20,7 @@ const BrandLogos = () => {
   return (
     <section id='brands' className='bg-white py-16 md:py-20'>
       <Container>
-        <div className='mx-auto max-w-2xl text-center'>
+        <div className='max-w-2xl text-left md:mx-auto md:text-center'>
           <span className='t-eyebrow text-btn-deep'>Brands we service</span>
           <h2 className='t-h2 text-heading mt-3'>Appliances we repair</h2>
           <p className='t-body text-body mt-4'>

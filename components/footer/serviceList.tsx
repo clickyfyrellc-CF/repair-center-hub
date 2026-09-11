@@ -9,7 +9,7 @@ const brandServices = [
 
 const ServiceList = () => {
   return (
-    <div className='text-btn-ink'>
+    <div className='text-btn-surface-ink'>
       <h3 className='t-h6'>Our Repair Services</h3>
       <ul>
         {services.map((service) => (

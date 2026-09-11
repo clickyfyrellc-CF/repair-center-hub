@@ -12,7 +12,7 @@ const About = () => {
     <section id='about' className='bg-white py-16 md:py-20'>
       <Container>
         <div className='grid items-center gap-10 md:grid-cols-2 md:gap-14'>
-          <div className='text-center md:text-left'>
+          <div className='text-left'>
             <span className='t-eyebrow text-btn-deep'>About us</span>
             <h2 className='t-h3 text-heading mt-3'>
               Trusted Appliance Repair Experts Serving the UAE
@@ -28,7 +28,7 @@ const About = () => {
               which site to open.
             </p>
 
-            <div className='mt-8 flex justify-center md:justify-start'>
+            <div className='mt-8 flex'>
               <Link
                 href={whatsappLink}
                 target='_blank'

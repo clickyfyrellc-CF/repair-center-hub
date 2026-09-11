@@ -194,8 +194,8 @@ export default function BoschPage() {
 
         <div className='relative mx-auto max-w-[1400px] px-6 md:px-8 lg:px-10'>
           <div className='flex h-auto min-h-0 items-center justify-center py-14 md:h-[600px] md:min-h-[600px] md:py-0'>
-            <div className='w-full max-w-[1200px] text-center'>
-              <div className='mb-3 flex justify-center md:mb-8'>
+            <div className='w-full max-w-[1200px] text-left md:text-center'>
+              <div className='mb-4 flex md:mb-8 md:justify-center'>
                 <span className='inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/15 px-4 py-2 text-sm font-semibold text-white backdrop-blur-sm md:px-6 md:py-3 md:text-base'>
                   <span className='inline-flex h-6 w-6 items-center justify-center rounded-full bg-white/15 md:h-7 md:w-7'>
                     <Wrench className='h-4 w-4 text-white' />
@@ -204,16 +204,16 @@ export default function BoschPage() {
                 </span>
               </div>
 
-              <h1 className='mx-auto max-w-[1100px] t-h1 text-white'>
+              <h1 className='max-w-[1100px] t-h1 text-white md:mx-auto'>
                 Professional Bosch Appliance Repair in UAE
               </h1>
 
-              <p className='mx-auto mt-3 max-w-[950px] t-lead text-white/90 md:mt-6'>
+              <p className='mt-4 max-w-[950px] t-lead text-white/90 md:mx-auto md:mt-6'>
                 Expert repair solutions for all Bosch appliances with quality
                 parts and trained technicians
               </p>
 
-              <div className='mt-4 flex flex-col items-center justify-center gap-3 md:mt-8 md:flex-row md:gap-5'>
+              <div className='mt-7 flex flex-col gap-3 md:mt-8 md:flex-row md:items-center md:justify-center md:gap-5'>
                 <Link
                   href={whatsappLink}
                   className='inline-flex items-center gap-3 rounded-full bg-[#ed0007] px-6 py-3 text-base font-semibold text-white shadow-lg shadow-red-900/25 transition hover:bg-[#D50006] md:px-8 md:py-5 md:text-lg'
@@ -230,7 +230,7 @@ export default function BoschPage() {
                 </a>
               </div>
 
-              <div className='mx-auto mt-8 flex max-w-[900px] flex-col items-center justify-center gap-6 border-t border-white/20 pt-7 md:mt-12 md:flex-row md:gap-14 md:pt-9'>
+              <div className='mt-9 flex max-w-[900px] flex-col gap-5 border-t border-white/20 pt-7 md:mx-auto md:mt-12 md:flex-row md:items-center md:justify-center md:gap-14 md:pt-9'>
                 {[
                   ['clock', 'Same Day Service'],
                   ['settings', 'Quality Parts'],
@@ -238,7 +238,7 @@ export default function BoschPage() {
                 ].map(([icon, label]) => (
                   <div
                     key={label}
-                    className='flex flex-col items-center gap-2.5 text-white md:flex-row md:gap-3'
+                    className='flex items-center gap-3 text-white'
                   >
                     <div className='flex h-11 w-11 items-center justify-center rounded-full border border-white/25 bg-white/15 backdrop-blur-sm md:h-12 md:w-12'>
                       {icon === 'clock' && <Clock3 className='h-6 w-6' />}
@@ -260,7 +260,7 @@ export default function BoschPage() {
         <div className='mx-auto max-w-[1400px] px-6 py-[55px] md:px-8 lg:px-10'>
           <div className='grid gap-6 md:grid-cols-2 xl:grid-cols-4'>
             {stats.map((item) => (
-              <div key={item.label} className='text-center'>
+              <div key={item.label} className='text-left md:text-center'>
                 <div className='text-4xl font-bold text-btn-deep md:text-[34px]'>{item.value}</div>
                 <div className='mt-2 text-base font-medium text-[#40536b]'>{item.label}</div>
               </div>
@@ -343,10 +343,10 @@ export default function BoschPage() {
 
       <section className='bg-wash py-16 md:py-20'>
         <div className='mx-auto max-w-[1400px] px-6 md:px-8 lg:px-10'>
-          <h2 className='text-center t-h2 text-heading'>
+          <h2 className='t-h2 text-heading md:text-center'>
             Common Issues & Solutions
           </h2>
-          <p className='mx-auto mt-4 max-w-[800px] text-center t-lead text-body'>
+          <p className='mt-4 max-w-[800px] t-lead text-body md:mx-auto md:text-center'>
             Watch our expert troubleshooting guides for common Bosch appliance
             problems
           </p>

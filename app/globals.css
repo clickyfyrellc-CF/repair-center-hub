@@ -71,6 +71,17 @@
     color: var(--btn-deep);
   }
 
+  /* Large filled areas — the footer, the closing banner — use this rather
+     than the raw accent. A light brand colour makes a weak, washed-out
+     surface at that size, so those themes supply a deeper tone here. */
+  .bg-btn-surface {
+    background-color: var(--btn-surface);
+  }
+
+  .text-btn-surface-ink {
+    color: var(--btn-surface-ink);
+  }
+
   /* Hero overlay. Two layers: a brand wash across the top-left for identity,
      and a vertical scrim so the headline, subheading and the feature row at
      the bottom stay legible wherever the photo happens to be bright. */
@@ -236,6 +247,8 @@
     --btn-veil-1: rgba(194, 118, 26, 0.55);
     --btn-veil-2: rgba(194, 118, 26, 0.18);
     --btn-deep: #A8650E;
+    --btn-surface: #A76516;
+    --btn-surface-ink: #ffffff;
 }
 
 /* Per-page brand themes. The brand page marks itself with data-brand and
@@ -250,6 +263,8 @@ body:has([data-brand='bosch']) {
     --btn-veil-1: rgba(237, 0, 7, 0.55);
     --btn-veil-2: rgba(237, 0, 7, 0.18);
     --btn-deep: #D50006;
+    --btn-surface: #ed0007;
+    --btn-surface-ink: #ffffff;
 }
 
 body:has([data-brand='lg']) {
@@ -257,6 +272,8 @@ body:has([data-brand='lg']) {
     --btn-ink: #ffffff;
     /* Dark enough to read as text on its own washes, so no separate tone. */
     --btn-deep: #a50034;
+    --btn-surface: #a50034;
+    --btn-surface-ink: #ffffff;
     --btn-wash: #FBF5F7;
     --btn-wash-deep: #F7E8ED;
     --btn-line: #F1D6DF;
@@ -274,6 +291,8 @@ body:has([data-brand='siemens']) {
     --btn-veil-1: rgba(60, 200, 190, 0.55);
     --btn-veil-2: rgba(60, 200, 190, 0.18);
     --btn-deep: #257C76;
+    --btn-surface: #216E69;
+    --btn-surface-ink: #ffffff;
 }
 
 .dark {

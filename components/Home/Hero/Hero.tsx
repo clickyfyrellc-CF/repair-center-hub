@@ -17,8 +17,8 @@ const Hero = () => {
       />
 
       <Container className='relative grid items-center gap-x-12 gap-y-10 py-14 md:grid-cols-2 md:py-20'>
-        <div className='flex flex-col text-center md:text-left'>
-          <span className='mx-auto inline-flex w-fit items-center gap-2 rounded-full border border-wash bg-white px-4 py-2 t-eyebrow text-btn-deep shadow-sm md:mx-0'>
+        <div className='flex flex-col text-left'>
+          <span className='inline-flex w-fit items-center gap-2 rounded-full border border-wash bg-white px-4 py-2 t-eyebrow text-btn-deep shadow-sm'>
             <Wrench className='h-3.5 w-3.5' />
             Appliance repair network &middot; UAE
           </span>
@@ -33,7 +33,7 @@ const Hero = () => {
             to the right team.
           </p>
 
-          <div className='mt-8 flex flex-col items-center gap-3 md:flex-row md:gap-4'>
+          <div className='mt-8 flex flex-col gap-3 md:flex-row md:items-center md:gap-4'>
             <Link
               href={whatsappLink}
               target='_blank'
