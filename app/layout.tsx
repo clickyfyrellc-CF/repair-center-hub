@@ -14,7 +14,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Repair Centers | Home Appliance Repair & Maintenance',
+  title: 'Service Center UAE | Home Appliance Repair & Maintenance',
   description:
     'Home appliance repair across the UAE. Refrigerators, washing machines, ovens, dishwashers, dryers and cooking ranges, repaired by trained technicians. Message us on WhatsApp.',
   keywords: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     'dryer repair',
   ],
   openGraph: {
-    title: 'Repair Centers | Home Appliance Repair',
+    title: 'Service Center UAE | Home Appliance Repair',
     description:
       'Home appliance repair across the UAE. Same-day service, upfront quotes, trained technicians.',
     type: 'website',

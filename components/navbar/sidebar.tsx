@@ -21,7 +21,7 @@ const Sidebar = () => {
 
       <SheetContent>
         <SheetHeader>
-          <SheetTitle className='font-semibold'>Repair Centers</SheetTitle>
+          <SheetTitle className='font-semibold'>Service Center UAE</SheetTitle>
           <SheetDescription>
             Home appliance repair across the UAE.
           </SheetDescription>

@@ -82,6 +82,10 @@
     color: var(--btn-surface-ink);
   }
 
+  .text-btn-surface {
+    color: var(--btn-surface);
+  }
+
   /* Hero overlay. Two layers: a brand wash across the top-left for identity,
      and a vertical scrim so the headline, subheading and the feature row at
      the bottom stay legible wherever the photo happens to be bright. */
