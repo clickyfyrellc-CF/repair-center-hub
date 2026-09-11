@@ -13,7 +13,7 @@ const TrustBanner = () => {
       <Container className='flex flex-col gap-8 text-left md:flex-row md:items-center md:justify-between md:gap-12'>
         <div className='max-w-xl'>
           <h2 className='t-h3 text-btn-surface-ink'>Service you can trust</h2>
-          <p className='t-body mt-3 text-btn-surface-ink/85'>
+          <p className='t-body mt-3 text-btn-surface-ink/90'>
             Tell us what stopped working and we will take it from there. You get
             a clear price before any work starts.
           </p>

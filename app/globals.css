@@ -247,7 +247,7 @@
     --btn-veil-1: rgba(194, 118, 26, 0.55);
     --btn-veil-2: rgba(194, 118, 26, 0.18);
     --btn-deep: #A8650E;
-    --btn-surface: #A76516;
+    --btn-surface: #8A3F00;
     --btn-surface-ink: #ffffff;
 }
 
@@ -263,7 +263,7 @@ body:has([data-brand='bosch']) {
     --btn-veil-1: rgba(237, 0, 7, 0.55);
     --btn-veil-2: rgba(237, 0, 7, 0.18);
     --btn-deep: #D50006;
-    --btn-surface: #ed0007;
+    --btn-surface: #AD0005;
     --btn-surface-ink: #ffffff;
 }
 
@@ -291,7 +291,7 @@ body:has([data-brand='siemens']) {
     --btn-veil-1: rgba(60, 200, 190, 0.55);
     --btn-veil-2: rgba(60, 200, 190, 0.18);
     --btn-deep: #257C76;
-    --btn-surface: #216E69;
+    --btn-surface: #1C5E59;
     --btn-surface-ink: #ffffff;
 }
 

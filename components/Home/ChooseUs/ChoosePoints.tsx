@@ -14,7 +14,7 @@ const ChoosePoints = () => {
           </span>
           <div>
             <p className='t-body-sm font-semibold text-btn-surface-ink'>{point.title}</p>
-            <p className='t-meta mt-1 text-btn-surface-ink/80'>{point.description}</p>
+            <p className='t-meta mt-1 text-btn-surface-ink/85'>{point.description}</p>
           </div>
         </li>
       ))}
