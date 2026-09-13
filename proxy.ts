@@ -35,15 +35,6 @@ const page = `<!doctype html>
   }
   h1 { margin: 28px 0 0; font-size: 28px; line-height: 1.2; letter-spacing: -.01em; }
   p { margin: 14px 0 0; color: #40536b; }
-  .actions { margin-top: 28px; display: flex; flex-direction: column; gap: 12px; }
-  a {
-    display: flex; align-items: center; justify-content: center;
-    padding: 14px 20px; border-radius: 999px;
-    font-weight: 600; text-decoration: none; white-space: nowrap;
-  }
-  .primary { background: #A8650E; color: #fff; }
-  .secondary { border: 1px solid #F5E9DA; color: #111827; }
-  @media (min-width: 520px) { .actions { flex-direction: row; } a { flex: 1; } }
 </style>
 </head>
 <body>
@@ -51,12 +42,7 @@ const page = `<!doctype html>
     <div class="brand">Service Center <span>UAE</span></div>
     <div class="kicker">Appliance Repair</div>
     <h1>We are back shortly</h1>
-    <p>The site is down for maintenance. Our technicians are still working, so
-       call or message us and we will book your repair as usual.</p>
-    <div class="actions">
-      <a class="primary" href="https://wa.me/971527315207">Message on WhatsApp</a>
-      <a class="secondary" href="tel:+971527315207">Call 052 731 5207</a>
-    </div>
+    <p>The site is down for maintenance. Please check back soon.</p>
   </main>
 </body>
 </html>`;
